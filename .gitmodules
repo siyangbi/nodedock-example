@@ -1,0 +1,3 @@
+[submodule "nodedock"]
+	path = nodedock
+	url = https://github.com/siyangbi/nodedock

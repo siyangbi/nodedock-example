@@ -1,0 +1,14 @@
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Application specific files
+node_modules/**
+npm-debug.log
+newrelic_agent.log
+#PHPStorm
+.idea
