@@ -19,6 +19,21 @@ connection.query('SELECT 1 + 1 AS solution', (err, rows, fields) => {
 
 connection.end();
 
+
+var elasticsearch = require('elasticsearch');
+var client = new elasticsearch.Client({
+  host: 'elasticsearch:9200',
+  log: 'trace'
+});
+
+client.search({
+  q: 'pants'
+}).then(function (body) {
+  console.log('ElasticSearch connected');
+}, function (error) {
+  console.trace(error.message);
+});
+
 app.get('/', (req, res) => (
   res.send('Hello World')
 ));
