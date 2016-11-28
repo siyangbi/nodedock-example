@@ -24,7 +24,7 @@ npm install
 docker-compose up 
 ```
 
-3 - check if the server is responding
+4 - check if the server is responding
 
 ```
 curl 127.0.0.1:3000
