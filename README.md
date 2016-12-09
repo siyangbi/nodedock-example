@@ -12,26 +12,29 @@ Nodedock is a Docker nodejs development environment. It facilitates running **no
 
 1 - Clone this repository:
 
-2 - Install dependencies
+2 - Init and Update submodule
+```
+git submodule update --init --recursive
+```
+If you want to update to latest nodedock
+```
+git submodule update --recursive --remote
+```
+
+3 - Install dependencies
 
 ```
 npm install
 ```
 
-3 - Run your docker-compose command inside nodedock folder
+4 - Run your docker-compose command inside nodedock folder
 
 ```
 docker-compose up 
 ```
 
-4 - check if the server is responding
+5 - check if the server is responding
 
 ```
 curl 127.0.0.1:3000
 ```
-
-	
-	
-	
-
-
