@@ -16,6 +16,10 @@ Nodedock is a Docker nodejs development environment. It facilitates running **no
 ```
 git submodule update --init --recursive
 ```
+If you want to update to latest nodedock
+```
+git submodule update --recursive --remote
+```
 
 3 - Install dependencies
 
